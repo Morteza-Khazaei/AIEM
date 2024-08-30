@@ -13,11 +13,11 @@ version = read_file('VERSION')
 requirements = read_requirements('requirements.txt')
 
 setup(
-    name = 'aiem',
+    name = 'AIEM',
     version = version,
     author = 'Morteza Khazaei',
     author_email = 'morteza.khazaei@usherbrooke.ca',
-    url = 'https://github.com/Morteza-Khazaei/aiem',
+    url = 'https://github.com/Morteza-Khazaei/AIEM',
     description = 'advanced integral equation model (AIEM)',
     long_description_content_type = 'text/x-rst',  # If this causes a warning, upgrade your setuptools package
     long_description = long_description,
