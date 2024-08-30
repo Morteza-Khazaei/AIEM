@@ -20,7 +20,7 @@ class AIEM:
         frq_hz = frq_ghz * 1.0e9                                # Transform from GHz to Hz.
         sigma = sigma * 1.0e2                                   # Convert from m to cm.
         cl = cl * 1.0e2                                         # Convert from m to cm.
-        k = 2 * np.pi * frq_hz / (299792458 * 1e2)                         # Wavenumer rad/cm
+        k = 2 * np.pi * frq_hz / (299792458 * 1e2)              # Wavenumer rad/cm
         self.ks = k * sigma                                     # roughness parameter
         self.kl = k * cl
 

@@ -13,7 +13,7 @@ version = read_file('VERSION')
 requirements = read_requirements('requirements.txt')
 
 setup(
-    name = 'AIEM',
+    name = 'aiem',
     version = version,
     author = 'Morteza Khazaei',
     author_email = 'morteza.khazaei@usherbrooke.ca',
@@ -21,7 +21,7 @@ setup(
     description = 'advanced integral equation model (AIEM)',
     long_description_content_type = 'text/x-rst',  # If this causes a warning, upgrade your setuptools package
     long_description = long_description,
-    license = 'Apache License',
+    license = 'MIT license',
     package_dir={'': 'src'},
     packages = find_packages(
         where='src', 
@@ -30,7 +30,7 @@ setup(
     install_requires = requirements,
     classifiers=[
         'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: Apache License',
+        'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ]  # Update these accordingly
 )
