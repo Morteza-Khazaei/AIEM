@@ -30,7 +30,7 @@ setup(
     install_requires = requirements,
     classifiers=[
         'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
+        'License :: OSI Approved :: Apache License',
         'Operating System :: OS Independent',
     ]  # Update these accordingly
 )
