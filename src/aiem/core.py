@@ -76,7 +76,6 @@ class AIEM:
             fiterm = iterm
             temp = tempold * (self.ks2 * (self.cs + self.css) ** 2) / fiterm
 
-        iterm += 1
         spectra_1 = np.zeros(iterm)
 
         for n in range(1, iterm):
@@ -250,8 +249,8 @@ class AIEM:
         Fvhbdns = self.fbvh(-self.sis * self.csfs, -self.sis * self.sfs, -qq4, -qq6, qqts, rvh) * self.expal(-qq6)
 
         # Compute scattering coefficients!
-        Ivv, Ihh, Ihv, Ivh = (np.empty((self.iterm,) + self.er.shape, dtype=np.complex_) for _ in range(4))
-        CIvv, CIhh, CIhv, CIvh = (np.empty((self.iterm,) + self.er.shape, dtype=np.complex_) for _ in range(4))
+        Ivv, Ihh, Ihv, Ivh = (np.empty((self.iterm,) + self.er.shape, dtype=np.complex128) for _ in range(4))
+        CIvv, CIhh, CIhv, CIvh = (np.empty((self.iterm,) + self.er.shape, dtype=np.complex128) for _ in range(4))
         
         for n in range(1, self.iterm):
             fn = n
