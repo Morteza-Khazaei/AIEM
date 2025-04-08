@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 
 fname = r'LC08_032032_20220912_eps_5.3GHz'
-base_path = r'D:\PhD source code\datasets'
+base_path = r'/mnt/d/PhD source code/datasets/'
 input_path = os.path.join(base_path, 'outputs')
 # output_path = os.path.join(base_path, 'outputs')
 infile = os.path.join(input_path, fname + '.npz')
